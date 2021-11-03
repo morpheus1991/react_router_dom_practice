@@ -7,8 +7,10 @@ import About from "./pages/About";
 import { Link } from "react-router-dom";
 import Profile from "./Profile";
 import Profiles from "./Profiles";
+import HistorySample from "./HistorySample";
 
 function App() {
+  console.log(window.location);
   return (
     <div className="App">
       <div>
@@ -30,6 +32,7 @@ function App() {
       <Route path="/" component={Home} exact={true}></Route>
       <Route path={["/about", "/info"]} component={About}></Route>
       <Route path="/profiles" component={Profiles}></Route>
+      <Route path="/history" component={HistorySample}></Route>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import { Link } from "react-router-dom";
 import Profile from "./Profile";
+import Profiles from "./Profiles";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
       </div>
       <Route path="/" component={Home} exact={true}></Route>
       <Route path={["/about", "/info"]} component={About}></Route>
-      <Route path="/profile/:userName" component={Profile}></Route>
+      <Route path="/profiles" component={Profiles}></Route>
     </div>
   );
 }
